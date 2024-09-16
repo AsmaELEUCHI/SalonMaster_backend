@@ -1,0 +1,32 @@
+# Nom de l'application
+spring.application.name=salonMaster
+
+# Configuration de la base de données
+spring.datasource.url=jdbc:mariadb://localhost:3306/salonmaster
+spring.datasource.username=root
+spring.datasource.password=your_password
+spring.datasource.driver-class-name=org.mariadb.jdbc.Driver
+
+# Configuration de Hibernate
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.open-in-view=false
+
+# Clé secrète JWT
+jwt.secret=your_jwt_secret
+
+# Configuration de l'email
+spring.mail.host=smtp.gmail.com
+spring.mail.port=587
+spring.mail.username=your_email@gmail.com
+spring.mail.password=your_email_password
+spring.mail.properties.mail.smtp.auth=true
+spring.mail.properties.mail.smtp.starttls.enable=true
+spring.mail.properties.mail.smtp.ssl.trust=smtp.gmail.com
+
+# URL de l'application frontend
+frontend.url=http://localhost:4200
+
+# URL de l'application backend
+app.url=http://localhost:8080
+app.confirmation.endpoint=/api/users/confirm
+app.reset.endpoint=/api/users/update-password
